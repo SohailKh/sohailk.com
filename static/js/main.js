@@ -398,21 +398,19 @@ $.get('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skhani
     } else {index=1}
     $("#song-name").html(data['recenttracks']['track'][index]['name']);
 	$("#artist").html(data['recenttracks']['track'][index]['artist']['#text']);
-    if (data['recenttracks']['track'][index]['image'][index]['#text'].length > index) {
-        $("#song-image").attr('src', data['recenttracks']['track'][index]['image'][index]['#text']);
+    if (data['recenttracks']['track'][index]['image'][0]['#text'].length > 0) {
+        $("#song-image").attr('src', data['recenttracks']['track'][index]['image'][0]['#text']);
     } else {
-        $("#song-image").attr('src', data['recenttracks']['artist'][index]['image'][index]['#text']);
+        $("#song-image").attr('src', data['recenttracks']['artist'][index]['image'][0]['#text']);
     }
     $("#image-link").attr('href', data['recenttracks']['track'][index]['url']);
     $("#listening h3").fadeIn(300);
 });
 
 
-
-
 $("#typed").typed({ 
     strings: ["I'm just happy you're here."],
-    startDelay: 4500,
+    startDelay: 4000,
     typeSpeed:0,
     callback: function() {
         $(".typed-cursor").hide();
@@ -421,8 +419,6 @@ $("#typed").typed({
     }
 });
 
-var elem = document.getElementById("canvas");
-setTimeout(function(){
-    $(".typed-cursor").css('visibility', 'visible')
+setTimeout(function(){$(".typed-cursor").css('visibility', 'visible')}, 1000);
 
-    }, 1500);
+console.log("%cStop looking up my skirt! :)", "color:red;font-size:28px");
