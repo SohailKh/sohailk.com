@@ -399,25 +399,27 @@ $(function() {
     });
 });
 
-$.get('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skhanifar&api_key=33e7696f3b48f13db4f0e85bb3d4870e&limit=2&format=json', function(data) {
-    var index;
-    if (data['recenttracks']['track'][0]['name'].length > 0) {index = 0;
-    } else {index=1}
-    $("#song-name").html(data['recenttracks']['track'][index]['name']);
-	$("#artist").html(data['recenttracks']['track'][index]['artist']['#text']);
-    if (data['recenttracks']['track'][index]['image'][0]['#text'].length > 0) {
-        $("#song-image").attr('src', data['recenttracks']['track'][index]['image'][0]['#text']);
-    } else {
-        $("#song-image").attr('src', data['recenttracks']['artist'][index]['image'][0]['#text']);
-    }
-    $("#image-link").attr('href', data['recenttracks']['track'][index]['url']);
-    $("#listening h3").fadeIn(300);
-});
-
+// hack to check if we're at root url
+if ((window.location.href.length - window.location.origin.length) < 2){
+    $.get('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skhanifar&api_key=33e7696f3b48f13db4f0e85bb3d4870e&limit=2&format=json', function(data) {
+        var index;
+        if (data['recenttracks']['track'][0]['name'].length > 0) {index = 0;
+        } else {index=1}
+        $("#song-name").html(data['recenttracks']['track'][index]['name']);
+    	$("#artist").html(data['recenttracks']['track'][index]['artist']['#text']);
+        if (data['recenttracks']['track'][index]['image'][0]['#text'].length > 0) {
+            $("#song-image").attr('src', data['recenttracks']['track'][index]['image'][0]['#text']);
+        } else {
+            $("#song-image").attr('src', data['recenttracks']['artist'][index]['image'][0]['#text']);
+        }
+        $("#image-link").attr('href', data['recenttracks']['track'][index]['url']);
+        $("#listening h3").fadeIn(300);
+    });
+}
 
 $("#typed").typed({ 
     strings: ["I'm just happy you're here."],
-    startDelay: 4000,
+    startDelay: 3200,
     typeSpeed:0,
     callback: function() {
         $(".typed-cursor").hide();
@@ -426,6 +428,6 @@ $("#typed").typed({
     }
 });
 
-setTimeout(function(){$(".typed-cursor").css('visibility', 'visible')}, 1000);
+setTimeout(function(){$(".typed-cursor").css('visibility', 'visible')}, 750);
 
-console.log("%cStop looking up my skirt! :)", "color:red;font-size:28px");
+console.log("%cStop looking up my skirt! :P", "color:red;font-size:28px");
