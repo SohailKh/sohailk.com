@@ -187,7 +187,7 @@ nav sup {
 #canvas {display: block;position: absolute;z-index:0;background:transparent;height:400px;}
 #topbar {
   width: 100%;
-  min-width: 700px;
+  /*min-width: 700px;*/
   height: 4px;
   background-image: -ms-linear-gradient(left, #46C340 0%, #4691F6 100%);
   background-image: -moz-linear-gradient(left, #46C340 0%, #4691F6 100%);

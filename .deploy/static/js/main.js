@@ -421,4 +421,4 @@ $("#typed").typed({
 
 setTimeout(function(){$(".typed-cursor").css('visibility', 'visible')}, 1000);
 
-console.log("%cStop looking up my skirt!", "color:red;font-size:28px");
+console.log("%cStop looking up my skirt! :)", "color:red;font-size:28px");

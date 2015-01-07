@@ -88,7 +88,6 @@ body {
 
 .wrap {
   max-width: 880px;
-  min-width: 600px;
   margin: 0 auto;
   padding: 0 40px; }
 
@@ -188,7 +187,7 @@ nav sup {
 #canvas {display: block;position: absolute;z-index:0;background:transparent;height:400px;}
 #topbar {
   width: 100%;
-  min-width: 700px;
+  /*min-width: 700px;*/
   height: 4px;
   background-image: -ms-linear-gradient(left, #46C340 0%, #4691F6 100%);
   background-image: -moz-linear-gradient(left, #46C340 0%, #4691F6 100%);
@@ -760,12 +759,20 @@ thead th, th {
   background: #eee;
   border-radius: 10px; }
 
-@media only screen and (max-width: 800px) {
-  #sidebar {
-    width: 200px; }
+@media only screen and (max-width: 550px) {
+  .dl, .blog, .docs, .buy {
+  	left:0 !important;right:0 !important;
+  	width: 49%;
+  	text-align: center;
+  	background-color: transparent !important;
+  	padding: 15px 0 !important;
+	}
+	header {padding-top:0;}
+	nav {padding-bottom: 40px;}
+	header nav img {top: 30px;}
+	.wrap {padding:0;}
+}
 
-  article {
-    margin-left: 250px; } }
 
 /* Index/about me */
 #banner {
@@ -834,7 +841,19 @@ thead th, th {
   background-image: -webkit-linear-gradient(left, #46C340 0%, #4691F6 100%);
   background-image: linear-gradient(to right, #46C340 0%, #4691F6 100%);
 }
+@media only screen and (max-width: 810px) {
+    article {
+    margin-left: 250px; }
 
+    #banner h2 {
+    	position: relative;
+    	padding: 0px 0;
+    	left:0;right:0;
+    	width:100%;
+    	margin-bottom:40px;
+    }
+    #banner h2.right {left:0;right:0;}
+  }
 #listening {
 	border-top: 1px solid rgb(238, 238, 238);
 	border-bottom: 1px solid rgb(238, 238, 238);
