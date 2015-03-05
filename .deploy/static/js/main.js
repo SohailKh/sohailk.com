@@ -431,3 +431,41 @@ $("#typed").typed({
 setTimeout(function(){$(".typed-cursor").css('visibility', 'visible')}, 750);
 
 console.log("%cStop looking up my skirt! :P", "color:red;font-size:28px");
+
+jQuery(document).ready(function($) {
+    $("#pause").click(function(event) {
+        if ($("#pause").text() == "Pause All Videos"){
+            $("#pause").text("Play All Videos")
+        } else {
+            $("#pause").text("Pause All Videos")
+        }
+
+        $('video').each(function() {
+            $(this).get(0).pause();
+        });
+    });
+    $("#sc-1-1-1").click(function(event) {
+        if ($(this).attr("checked") == "checked") {
+            var divList = $(".xcode-shortcut");
+            divList.sort(function(a, b){ return $(a).data("useful")-$(b).data("useful")});
+            $("#shortcuts").html(divList);
+            setTimeout(function (){
+                $('video').each(function() {
+                    $(this).get(0).play();
+                });
+            }, 1500);
+        }
+    });
+    $("#sc-1-1-2").click(function(event) {
+        if ($(this).attr("checked") == "checked") {
+            var divList = $(".xcode-shortcut");
+            divList.sort(function(a, b){ return $(a).data("similar")-$(b).data("similar")});
+            $("#shortcuts").html(divList);
+            setTimeout(function (){
+                $('video').each(function() {
+                    $(this).get(0).play();
+                });
+            }, 1500);
+        };
+    });
+});

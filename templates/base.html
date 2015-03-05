@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
 
 	{% block header %}
-		<title>{% block title %}{% endblock %} Sohail Khanifar</title>
+		<title>{{title}} | Sohail Khanifar</title>
+		<meta name="description" content='{{ description }}'>
 	{% endblock header %}
   </head>
 
