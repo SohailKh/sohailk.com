@@ -457,7 +457,7 @@ jQuery(document).ready(function($) {
         }
     });
     $("#sc-1-1-2").click(function(event) {
-        if ($(this).attr("checked") == "checked") {
+        if ($(this).attr("name") == "sc-1-1") {
             var divList = $(".xcode-shortcut");
             divList.sort(function(a, b){ return $(a).data("similar")-$(b).data("similar")});
             $("#shortcuts").html(divList);

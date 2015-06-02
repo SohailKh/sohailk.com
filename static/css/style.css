@@ -936,6 +936,9 @@ thead th, th {
 .post-padding {
   padding-top: 10px; }
 
+.post-footer {
+  padding-bottom: 90px; }
+
 /*Typed*/
 .typed-cursor {
   visibility: hidden;

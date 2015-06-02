@@ -1,16 +1,18 @@
 title: Xcode 6 Keyboard Shortcuts & Key Bindings
 headline: Must go faster...
-<!-- thumbnail: /static/images/image-thumbnail.jpg -->
-date: 06-01-2015
+date: 04-03-2015
 
 {% extends "post.html" %}
 {% block body %}
 {% filter markdown %}
 
-Remembering all of xcode's shortcuts has been a huge hassle for me. It feels incredibly unintuitive. I've compiled a list of my most used shortcuts and organized them into a list. Despite having <a href="https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/MenuCommands/MenuCommands014.html">a few</a> good <a href="http://nshipster.com/xcode-key-bindings-and-gestures/">sites</a> to <a href="http://spin.atomicobject.com/2014/03/23/xcode-keyboard-shortcuts/">reference</a>, none of them had all the things I needed. So, I made my own.
+Remembering all of xcode's shortcuts has always been a hassle for me. It feels incredibly unintuitive and lacks Apple's usual polish. Despite having <a href="https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/MenuCommands/MenuCommands014.html">a few</a> good <a href="http://nshipster.com/xcode-key-bindings-and-gestures/">sites</a> to <a href="http://spin.atomicobject.com/2014/03/23/xcode-keyboard-shortcuts/">reference</a>, none of them had all the things I needed. So, I compiled and recorded my most used shortcuts and organized them into a list.
 
 If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</a>.</a> Hope this helps!
-
+<div>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Xcode 6 Keyboard Shortcuts & Key Bindings" data-via="skhanifar" data-size="large">Tweet</a>
+</div>
+<hr/>
 <strong>Note:</strong> There are a lot of videos on this page. It may make your computer sluggish. If it does, press the "Pause All Videos" button below and play them individually.
 
 {% endfilter %}
@@ -59,44 +61,21 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 </div>
 <hr />
 <div id="shortcuts">
-	<div class="xcode-shortcut"  data-similar="1" data-useful="13">
-		<h3>Reindent Lines</h3>
+	<div class="xcode-shortcut"  data-similar="21" data-useful="1">
+		<h3>Quick Open File</h3>
 		<div class="keys">
-			<div class="key"><span>⌃</span></div>
-			<p>+</p>
-			<div class="key"><span>I</span></div>
-		</div>
-		<p>I didn't know this existed until a friend pointed it out. Quickly reindent your disorganized code.</p>
-		<img class="xcode-gif gfyitem" data-id="EvenLameApe"/>
-	</div>
-	<hr />
-	<div class="xcode-shortcut"  data-similar="2" data-useful="17">
-		<h3>Move Lines Up/Down</h3>
-		<div class="keys">
-			<div class="key"><span>⌥</span></div>
-			<p>+</p>
+			<div class="key"><span>⇧</span></div>
+			+
 			<div class="key"><span>⌘</span></div>
 			<p>+</p>
-			<div class="key"><span>]</span></div>
-			<p>or</p>
-			<div class="key"><span>[</span></div>
+			<div class="key"><span>O</span></div>
 		</div>
-		<img class="xcode-gif gfyitem" data-id="PerfumedVagueKatydid"/>
-	</div>
+		<p>Quickly open any file. </p>
+		<p>⌘ + ↩ to open in assistant editor.</p>
+		<img class="xcode-gif gfyitem" data-id="GenerousDarkFirefly"/>
 	<hr />
-
-	<div class="xcode-shortcut" data-similar="3" data-useful="3">
-		<h3>Comment Line</h3>
-		<div class="keys">
-			<div class="key"><span>⌘</span></div>
-			<p>+</p>
-			<div class="key"><span>/</span></div>
-		</div>
-		<p>Look, we all do it - for better or worse. Adding // to the beginning of a line also works.</p> 
-		<img class="xcode-gif gfyitem" data-id="FrequentMarriedBedbug"/>
 	</div>
-	<hr />
-	<div class="xcode-shortcut"  data-similar="4" data-useful="14">
+	<div class="xcode-shortcut"  data-similar="4" data-useful="2">
 		<h3>Run</h3>
 		<div class="keys">
 			<div class="key"><span>⌘</span></div>
@@ -104,11 +83,11 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 			<div class="key"><span>R</span></div>
 		</div>
 		<p>Run on your selected device. Will build if necessary.</p>
-		<p>⌘ + B to just build</b>
+		<p>⌘ + B to just build</p>
 		<img class="xcode-gif gfyitem" data-id="NegativePersonalGreathornedowl"/>
-	</div>
 	<hr />
-	<div class="xcode-shortcut" data-similar="5" data-useful="2">
+	</div>
+	<div class="xcode-shortcut" data-similar="5" data-useful="3">
 		<h3>Clean</h3>
 		<div class="keys">
 			<div class="key"><span>⇧</span></div>
@@ -119,10 +98,10 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 		</div>
 		<blockquote>Removes all the product files, as well as any object files (.o files) or other intermediate files created during the build process.</blockquote>
 		<img class="xcode-gif gfyitem" data-id="MildSophisticatedGodwit"/>
-	</div>
 	<hr />
+	</div>
 	
-	<div class="xcode-shortcut" data-similar="6" data-useful="7">
+	<div class="xcode-shortcut" data-similar="6" data-useful="4">
 		<h3>Go Forward/Back</h3>
 		<div class="keys">
 			<div class="key"><span>⌘</span></div>
@@ -135,9 +114,9 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 		</div>
 		<p>Quickly browse this pane's history. Adding ⌥ (alt/option) will change the alternate pane. Very handy. </p>
 		<img class="xcode-gif gfyitem" data-id="CooperativeUnequaledBelugawhale"/>
-	</div>
 	<hr />
-	<div class="xcode-shortcut" data-similar="7" data-useful="7">
+	</div>
+	<div class="xcode-shortcut" data-similar="7" data-useful="5">
 		<h3>Show File Counterpart</h3>
 		<p>See the file's .m or .h quickly.</p>
 		<div class="keys">
@@ -149,11 +128,11 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 			<p>or</p>
 			<div class="key"><span>⇣</span></div>
 		</div>
-		<img class="xcode-gif gfyitem" data-id="CooperativeUnequaledBelugawhale"/>
-	</div>
+		<img class="xcode-gif gfyitem" data-id="BrownUnhealthyHawk"/>
 	<hr />
-	<div class="xcode-shortcut" data-similar="8" data-useful="7">
-		<h3>Show Assitant Editor</h3>
+	</div>
+	<div class="xcode-shortcut" data-similar="8" data-useful="6">
+		<h3>Show Assistant Editor</h3>
 		<div class="keys">
 			<div class="key"><span>⌘</span></div>
 			<p>+</p>
@@ -161,11 +140,11 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 			<p>+</p>
 			<div class="key"><span>↩</span></div>
 		</div>
-		<p>⌘ + ↩ to hide assistant editor.</p>
+		<p>⌘ + ↩ to hide the assistant editor. Why are these two different? Who knows...</p>
 		<img class="xcode-gif gfyitem" data-id="DistortedWelloffIcelandgull"/>
-	</div>
 	<hr />
-	<div class="xcode-shortcut"  data-similar="9" data-useful="16">
+	</div>
+	<div class="xcode-shortcut"  data-similar="9" data-useful="7">
 		<h3>Switch Selection</h3>
 		<div class="keys">
 			<div class="key"><span>⌘</span></div>
@@ -174,10 +153,49 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 		</div>
 		<p>An essential part of the Xcode power user's toolbelt: switch to the other pane. You'll need to press ⇢ (right key) after evoking the shortcut to get to the right sided pane. </p>
 		<img class="xcode-gif gfyitem" data-id="DismalNegligibleCrayfish"/>
-	</div>
 	<hr />
-
-	<div class="xcode-shortcut"  data-similar="10" data-useful="8">
+	</div>
+	<div class="xcode-shortcut" data-similar="19" data-useful="8">
+		<h3>Edit All in Scope</h3>
+		<div class="keys">
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>⌥</span></div>
+			<p>+</p>
+			<div class="key"><span>E</span></div>
+		</div>
+		<p>Man, I wish xcode had something like Sublime Text's ⌘+D or multiple selection, but this'll do I guess.</p>
+		<img class="xcode-gif gfyitem" data-id="WelllitWideAfricanmolesnake"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut" data-similar="18" data-useful="9">
+		<h3>Open/Close Console</h3>
+		<div class="keys">
+			<div class="key"><span>⇧</span></div>
+			<p>+</p>
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>Y</span></div>
+		</div>
+		<blockquote> A pane in the debug area that lets you see program output, and interact with the debugger.</blockquote>
+		<p> Despite using a <a href="https://github.com/neonichu/BBUDebuggerTuckAway">plugin</a> that auto-hides my console, I find myself constantly having to hide it manually.</p>
+		<img class="xcode-gif gfyitem" data-id="GlitteringEmbarrassedBarasinga"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut" data-similar="20" data-useful="10">
+		<h3>Set/Remove a Breakpoint</h3>
+		<div class="keys">
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>\</span></div>
+		</div>
+		<blockquote> An action to perform when a program reaches a certain point in its execution, such as logging output to the console. The default breakpoint action is to pause program execution</blockquote>
+		<p>⌘ + Y to disable/enable all breakpoints</p>
+		<p>⌃ + ⌘ + Y to play/pause debugger</p>
+		<img class="xcode-gif gfyitem" data-id="JampackedKeenEarthworm"></img>
+	<hr />
+	</div>
+	<div class="xcode-shortcut"  data-similar="10" data-useful="11">
 		<h3>Show/Hide Navigator</h3>
 		<div class="keys">
 			<div class="key"><span>⌘</span></div>
@@ -185,9 +203,85 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 			<div class="key"><span>0</span></div>
 		</div>
 		<img class="xcode-gif gfyitem" data-id="ObeseSecondGoitered"/>
-	</div>
 	<hr />
-	<div class="xcode-shortcut"  data-similar="11" data-useful="10">
+	</div>
+	<div class="xcode-shortcut"  data-similar="1" data-useful="12">
+		<h3>Reindent Lines</h3>
+		<div class="keys">
+			<div class="key"><span>⌃</span></div>
+			<p>+</p>
+			<div class="key"><span>I</span></div>
+		</div>
+		<p>I didn't know this existed until a friend pointed it out. Quickly reindent your disorganized code.</p>
+		<img class="xcode-gif gfyitem" data-id="EvenLameApe"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut"  data-similar="2" data-useful="13">
+		<h3>Move Lines Up/Down</h3>
+		<div class="keys">
+			<div class="key"><span>⌥</span></div>
+			<p>+</p>
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>]</span></div>
+			<p>or</p>
+			<div class="key"><span>[</span></div>
+		</div>
+		<img class="xcode-gif gfyitem" data-id="PerfumedVagueKatydid"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut" data-similar="3" data-useful="14">
+		<h3>Comment Line</h3>
+		<div class="keys">
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>/</span></div>
+		</div>
+		<p>Look, we all do it - for better or worse. Adding // to the beginning of a line also works.</p> 
+		<img class="xcode-gif gfyitem" data-id="FrequentMarriedBedbug"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut"  data-similar="14" data-useful="15">
+		<h3>Show/Hide Utilities</h3>
+		<div class="keys">
+			<div class="key"><span>⇧</span></div>
+			<p>+</p>
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>0</span></div>
+		</div>
+		<img class="xcode-gif gfyitem" data-id="GorgeousImpoliteArcticwolf"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut"  data-similar="17" data-useful="16">
+		<h3>Jump To Definition</h3>
+			<div class="keys">
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>⌃</span></div>
+			<p>+</p>
+			<div class="key"><span>J</span></div>
+		</div>
+		<p>Need to find out where something's source? Jump to definition.</p>
+		<img class="xcode-gif gfyitem" data-id="ScornfulUnfortunateKingfisher"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut"  data-similar="12" data-useful="17">
+		<h3>Quick Help</h3>
+		<div class="keys">	
+			<div class="key"><span>⌘</span></div>
+			<p>+</p>
+			<div class="key"><span>⌃</span></div>
+			<p>+</p>
+			<div class="key"><span>⌥</span></div>
+			<p>+</p>
+			<div class="key"><span>/</span></div>
+		</div>
+		<p>Make a selection and run the shortcut. Xcode will open the documentation with your term. A lifesaver when you're starting out.</p>
+		<img class="xcode-gif gfyitem" data-id="BowedLeanCrayfish"/>
+	<hr />
+	</div>
+	<div class="xcode-shortcut"  data-similar="11" data-useful="18">
 		<h3>Navigator Tab Shortcuts</h3>
 		<div class="keys">
 			<div class="key"><span>⌘</span></div>
@@ -206,50 +300,10 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 			<li>Breakpoint Navigator</li>
 			<li>Report Navigator</li>
 		</ol>
-		<img class="xcode-gif gfyitem" data-id="AromaticBriefDegu"/>
-	</div>
+		<img class="xcode-gif gfyitem" data-id="InexperiencedFondImago"/>
 	<hr />
-	<div class="xcode-shortcut"  data-similar="12" data-useful="12">
-		<h3>Quick Help</h3>
-		<div class="keys">	
-			<div class="key"><span>⌘</span></div>
-			<p>+</p>
-			<div class="key"><span>⌃</span></div>
-			<p>+</p>
-			<div class="key"><span>⌥</span></div>
-			<p>+</p>
-			<div class="key"><span>/</span></div>
-		</div>
-		<p>Make a selection and run the shortcut. Xcode will open the documentation with your term. A lifesaver when you're starting out.</p>
-		<img class="xcode-gif gfyitem" data-id="BowedLeanCrayfish"/>
 	</div>
-	<hr />
-	<div class="xcode-shortcut" data-similar="13" data-useful="5">
-		<h3>Open Documentation</h3>
-		<div class="keys">
-			<div class="key"><span>⇧</span></div>
-			<p>+</p>
-			<div class="key"><span>⌘</span></div>
-			<p>+</p>
-			<div class="key"><span>0</span></div>
-		</div>
-		<blockquote>A pane in the Organizer window designed for browsing and searching developer documentation.</blockquote>
-		<img class="xcode-gif gfyitem" data-id="HilariousMessyIndianspinyloach"/>
-	</div>
-	<hr />	
-	<div class="xcode-shortcut"  data-similar="14" data-useful="17">
-		<h3>Show/Hide Utilities</h3>
-		<div class="keys">
-			<div class="key"><span>⇧</span></div>
-			<p>+</p>
-			<div class="key"><span>⌘</span></div>
-			<p>+</p>
-			<div class="key"><span>0</span></div>
-		</div>
-		<img class="xcode-gif gfyitem" data-id="GorgeousImpoliteArcticwolf"/>
-	</div>
-	<hr />
-	<div class="xcode-shortcut"  data-similar="15" data-useful="18">
+	<div class="xcode-shortcut"  data-similar="15" data-useful="19">
 		<h3>Utilities Tab Shortcuts</h3>
 		<div class="keys">
 			<div class="key"><span>⇧</span></div>
@@ -270,9 +324,9 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 		</ol>
 		<p>The avaialbility of each tab is based upon the currently selected file. E.G. Storyboard files will have all six availble.</p>
 		<img class="xcode-gif gfyitem" data-id="WeakRipeIsabellinewheatear"/>
-	</div>
 	<hr />
-	<div class="xcode-shortcut"  data-similar="16" data-useful="15">
+	</div>
+	<div class="xcode-shortcut"  data-similar="16" data-useful="20">
 		<h3>Show File</h3>
 		<div class="keys">
 			<div class="key"><span>⇧</span></div>
@@ -283,62 +337,24 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 		</div>
 		<p>Quickly locate a the currently selected file in the Project inspector.</p>
 		<img class="xcode-gif gfyitem" data-id="SprySourGypsymoth"/>
-	</div>
 	<hr />
-	<div class="xcode-shortcut"  data-similar="17" data-useful="9">
-		<h3>Jump To Definition</h3>
-			<div class="keys">
-			<div class="key"><span>⌘</span></div>
-			<p>+</p>
-			<div class="key"><span>⌃</span></div>
-			<p>+</p>
-			<div class="key"><span>J</span></div>
-		</div>
-		<p>Need to find out where something's source? Jump to definition.</p>
-		<img class="xcode-gif gfyitem" data-id="ScornfulUnfortunateKingfisher"/>
 	</div>
-	<hr />
-	<div class="xcode-shortcut" data-similar="18" data-useful="4">
-		<h3>Open/Close Console</h3>
+	<div class="xcode-shortcut" data-similar="13" data-useful="21">
+		<h3>Open Documentation</h3>
 		<div class="keys">
 			<div class="key"><span>⇧</span></div>
 			<p>+</p>
 			<div class="key"><span>⌘</span></div>
 			<p>+</p>
-			<div class="key"><span>Y</span></div>
+			<div class="key"><span>0</span></div>
 		</div>
-		<blockquote> A pane in the debug area that lets you see program output, and interact with the debugger.</blockquote>
-		<p> Despite using a <a href="https://github.com/neonichu/BBUDebuggerTuckAway">plugin</a> that auto-hides my console, I find myself constantly having to hide it manually.</p>
-		<img class="xcode-gif gfyitem" data-id="GlitteringEmbarrassedBarasinga"/>
+		<blockquote>A pane in the Organizer window designed for browsing and searching developer documentation.</blockquote>
+		<img class="xcode-gif gfyitem" data-id="HilariousMessyIndianspinyloach"/>
+	<hr />	
 	</div>
-	<hr />
-	<div class="xcode-shortcut" data-similar="19" data-useful="1">
-		<h3>Edit All in Scope</h3>
-		<div class="keys">
-			<div class="key"><span>⌘</span></div>
-			<p>+</p>
-			<div class="key"><span>⌥</span></div>
-			<p>+</p>
-			<div class="key"><span>E</span></div>
-		</div>
-		<p>Man, I wish xcode had something like Sublime Text's ⌘+D or multiple selection, but this'll do I guess.</p>
-		<img class="xcode-gif gfyitem" data-id="WelllitWideAfricanmolesnake"/>
-	</div>
-	<hr />
-	<div class="xcode-shortcut" data-similar="20" data-useful="6">
-		<h3>Set/Remove a Breakpoint</h3>
-		<div class="keys">
-			<div class="key"><span>⌘</span></div>
-			<p>+</p>
-			<div class="key"><span>\</span></div>
-		</div>
-		<blockquote> An action to perform when a program reaches a certain point in its execution, such as logging output to the console. The default breakpoint action is to pause program execution</blockquote>
-		<p>⌘ + Y to disable/enable all breakpoints</p>
-		<p>⌃ + ⌘ + Y to play/pause debugger</p>
-		<img class="xcode-gif gfyitem" data-id="JampackedKeenEarthworm"></img>
-	</div>
-	<hr />
-
+<div>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Xcode 6 Keyboard Shortcuts & Key Bindings" data-via="skhanifar" data-size="large">Tweet</a>
+</div>
 </div>
 <script>
 	(function(d, t) {
@@ -347,5 +363,6 @@ If you have any suggestions, <a href="mailto:sohailkhanifar">shoot me an email</
 		g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js';
 		s.parentNode.insertBefore(g, s);
 	}(document, 'script'));			
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs')
 </script>
 {% endblock body %}
