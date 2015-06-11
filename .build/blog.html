@@ -30,26 +30,42 @@
 		</div>
 </header>
 	
-<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<div class="container">
+	<section id="wrapper">
+		<header>
+			<h1>Entries</h1>
+		</header> 
 
-<script type="text/javascript" charset="utf-8">
-	$(document).ready(function() {
-		
-		// Add the missing url to the text
-		$("#url").text(window.location.pathname);
-		
-		// Fix the css locations dynamically
-		$("head link").each(function() {
-			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
-				$(this).attr("href", "../" + $(this).attr("href"));
-		});
-		
-	})
-</script>
+		<ul id="post-list">
+			
+				<li> 
+					<a href='/posts/project-three.html'><aside class="dates">Mar 4</aside></a>
+					<a href='/posts/project-three.html'>Xcode 6 Keyboard Shortcuts &amp; Key Bindings <h2></h2></a>
+				</li>
+			
+				<li> 
+					<a href='/posts/project-one.html'><aside class="dates">Nov 6</aside></a>
+					<a href='/posts/project-one.html'>Learning iOS Development : Tips &amp; Suggestions <h2></h2></a>
+				</li>
+			
+				<li> 
+					<a href='/posts/project-two.html'><aside class="dates">Oct 6</aside></a>
+					<a href='/posts/project-two.html'>Something Smells New <h2></h2></a>
+				</li>
+			
+		</ul>
 
-<p>
-	Sorry the page <b id="url"></b> could not be found on this server.
-</p>
+		<!-- Uncomment for link to archive.
+		
+		-->
+
+		
+			<footer id="footer">
+				<p class="small">A short description</p>
+			</footer>
+		
+	</section>
+</div>	
 
 <footer>
 	<!-- <p style="text-align:center;position:absolute;bottom:0;left:0;right:0">Sohail Khanifar, 2015</p> -->
