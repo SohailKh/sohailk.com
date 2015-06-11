@@ -430,8 +430,6 @@ $("#typed").typed({
 
 setTimeout(function(){$(".typed-cursor").css('visibility', 'visible')}, 750);
 
-console.log("%cStop looking up my skirt! :P", "color:red;font-size:28px");
-
 jQuery(document).ready(function($) {
     $("#pause").click(function(event) {
         if ($("#pause").text() == "Pause All Videos"){
